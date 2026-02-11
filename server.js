@@ -430,8 +430,18 @@ setInterval(() => {
 }, 60000); // 每分钟检查一次
 
 // 启动服务器
-const PORT = process.env.PORT || 3000;
+const PORT = parseInt(process.env.PORT) || 8080;
 server.listen(PORT, '0.0.0.0', () => {
+  console.log('═══════════════════════════════════════');
+  console.log('🚀 此刻地图服务器启动成功！');
+  console.log(`📡 监听端口: ${PORT}`);
+  console.log(`📡 环境端口: ${process.env.PORT}`);
+  console.log(`⏰ 启动时间: ${new Date().toLocaleString('zh-CN')}`);
+  console.log(`🌍 运行环境: ${process.env.NODE_ENV || 'production'}`);
+  console.log(`🇨🇳 部署平台: Zeabur`);
+  console.log('═══════════════════════════════════════');
+});
+
   console.log('🚀 此刻地图服务器启动成功!');
   console.log(`📡 端口: ${PORT}`);
   console.log(`⏰ 时间: ${new Date().toLocaleString('zh-CN')}`);
