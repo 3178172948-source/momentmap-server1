@@ -440,7 +440,7 @@ server.listen(PORT, '0.0.0.0', () => {
   console.log(`🌍 运行环境: ${process.env.NODE_ENV || 'production'}`);
   console.log(`🇨🇳 部署平台: Zeabur`);
   console.log('═══════════════════════════════════════');
-});
+
 
   console.log('🚀 此刻地图服务器启动成功!');
   console.log(`📡 端口: ${PORT}`);
