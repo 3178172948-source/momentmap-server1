@@ -1,0 +1,19 @@
+{
+  "name": "momentmap-server",
+  "version": "1.0.0",
+  "description": "此刻地图 WebSocket 服务器",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["websocket", "map", "chat"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.14.2"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
